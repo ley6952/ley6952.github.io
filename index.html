@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <video id="song" hidden loop>
+        <source src="music/seasons.mp4" type="video/mp4">
+    </video>
+    <video id="calling" hidden loop>
+        <source src="music/calling.mp4" type="video/mp4">
+    </video>
+
+    <div class="btn-openMusic">
+        <button id="openMusic" onclick="handleMusic()">
+            <span id="btn-text">ເປີດເພງ</span>
+        </button>
+    </div>
+
+    <div class="con">
+        <div class="wapper">
+            <h1>14 ກຸ່ມພາ ວັນວາເລັນທາຍ❤️</h1>
+            <div class="wap-img-title">
+                <div class="img"></div>
+                <div class="title">
+                    <p id="text">ຣັກເລ້ບໍ່🥺</p>
+                </div>
+            </div>
+            <div class="wap-btn">
+                <button id="btn-love" class="btn-love" onclick="Love()">ຣັກເລ້ ❤️</button>
+                <button id="btn-not-love" class="btn-not-love" onclick="notLove()">ບໍ່ຣັກເລ້ 💔</button>
+                <button id="reset" class="reset" onclick="location.reload()">ກັບຄືນ</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="con-leycalme" hidden>
+        <div class="wap-leycalme">
+            <div class="img-leycalme">
+                <div class="txt-calling">
+                    <h1>bobby</h1>
+                    <p>calling...</p>
+                </div>
+            </div>
+            <div class="btn-leycalme">
+                <button class="btn-connect"><i class="fa-solid fa-phone"></i></button>
+                <button class="btn-not-connect" onclick="notConnect()"><i class="fa-solid fa-phone"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
